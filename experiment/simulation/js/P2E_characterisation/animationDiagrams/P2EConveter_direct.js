@@ -1,6 +1,10 @@
 //var a = 5;
 function PtoEconveter_direct(inputValue,OutputValue){	
-		var w = 900;
+	paper = new Raphael(document.getElementById('canvas'), '100%', 500);
+//	console.log("in p2e direct");
+    //x = 310;
+	//y = 160;
+	var w = 900;
     var h = 500;
 
 var width = $(window).width();
@@ -22,6 +26,7 @@ var width = $(window).width();
 	x = 50;
 	y = 100;
 	a = 0;
+	
 	var IPNozzel = Nozzelanim_d (x, y,a);
 	var IPFlapper = FlapperAnim_d (x, y ,a);
 	var IPspringscrew = springscrew_d (x,y,a);
